@@ -3,6 +3,6 @@
   "sub_project_type": "",
   "name": "色彩智选",
   "app_slug": "choice-tob",
-  "version_description": "修复前端编译错误并更新首页",
+  "version_description": "创建管理端登录页面",
   "preview_type": "pc"
 }

@@ -4,18 +4,13 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AnimatedRoutes } from "@/components/AnimatedRoutes";
 import { PageTransition } from "@/components/PageTransition";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+
+// 用户端页面
 import Index from "./pages/Index";
-import Dashboard from "./pages/Dashboard";
-import VipTest from "./pages/VipTest";
-import Products from "./pages/Products";
-import SalesAnalysis from "./pages/SalesAnalysis";
-import Inventory from "./pages/Inventory";
-import Members from "./pages/Members";
-import Reports from "./pages/Reports";
-import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+
+// 管理端页面
+import AdminLogin from "./pages/admin/Login";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -36,24 +31,16 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <BrowserRouter>
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">
-              <AnimatedRoutes>
-                <Route path="/" element={<PageTransition transition="slide-up"><Index /></PageTransition>} />
-                <Route path="/dashboard" element={<PageTransition transition="slide-up"><Dashboard /></PageTransition>} />
-                <Route path="/vip" element={<PageTransition transition="slide-up"><VipTest /></PageTransition>} />
-                <Route path="/products" element={<PageTransition transition="slide-up"><Products /></PageTransition>} />
-                <Route path="/sales-analysis" element={<PageTransition transition="slide-up"><SalesAnalysis /></PageTransition>} />
-                <Route path="/inventory" element={<PageTransition transition="slide-up"><Inventory /></PageTransition>} />
-                <Route path="/members" element={<PageTransition transition="slide-up"><Members /></PageTransition>} />
-                <Route path="/reports" element={<PageTransition transition="slide-up"><Reports /></PageTransition>} />
-                <Route path="/login" element={<PageTransition transition="slide-up"><Login /></PageTransition>} />
-                <Route path="*" element={<PageTransition transition="fade"><NotFound /></PageTransition>} />
-              </AnimatedRoutes>
-            </main>
-            <Footer />
-          </div>
+          <AnimatedRoutes>
+            {/* 用户端路由 */}
+            <Route path="/" element={<PageTransition transition="slide-up"><Index /></PageTransition>} />
+            
+            {/* 管理端路由 */}
+            <Route path="/admin/login" element={<PageTransition transition="fade"><AdminLogin /></PageTransition>} />
+            
+            {/* 404 */}
+            <Route path="*" element={<PageTransition transition="fade"><NotFound /></PageTransition>} />
+          </AnimatedRoutes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
