@@ -1,10 +1,10 @@
 {
   "version": 2,
   "name": "choice-tob",
-  "buildCommand": "cd frontend && pnpm install && pnpm build",
+  "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": "vite",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://choice-tob-api.vercel.app/api/$1" }
+    { "source": "/api/(.*)", "destination": "/api/$1" }
   ]
 }
