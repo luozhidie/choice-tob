@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 
 // 管理端页面
 import AdminLogin from "./pages/admin/Login";
+import AdminDashboard from "./pages/admin/Dashboard";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -37,6 +38,7 @@ function App() {
             
             {/* 管理端路由 */}
             <Route path="/admin/login" element={<PageTransition transition="fade"><AdminLogin /></PageTransition>} />
+            <Route path="/admin/dashboard" element={<PageTransition transition="slide-up"><AdminDashboard /></PageTransition>} />
             
             {/* 404 */}
             <Route path="*" element={<PageTransition transition="fade"><NotFound /></PageTransition>} />
