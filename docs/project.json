@@ -3,6 +3,6 @@
   "sub_project_type": "",
   "name": "服饰智选",
   "app_slug": "choice-tob",
-  "version_description": "完成管理端商品页面开发",
+  "version_description": "完成用户端全部页面，准备Vercel部署",
   "preview_type": "pc"
 }

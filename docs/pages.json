@@ -1,27 +1,67 @@
 [
   {
-    "pageKey": "hwqjlx",
+    "pageKey": "ufza98",
     "title": "/",
     "url": "/"
   },
   {
-    "pageKey": "6d1h6o",
+    "pageKey": "js87ag",
     "title": "/admin/dashboard",
     "url": "/admin/dashboard"
   },
   {
-    "pageKey": "2i9buw",
+    "pageKey": "w7w2wf",
+    "title": "/admin/inventory",
+    "url": "/admin/inventory"
+  },
+  {
+    "pageKey": "bgelnb",
     "title": "/admin/login",
     "url": "/admin/login"
   },
   {
-    "pageKey": "k1v2x0",
+    "pageKey": "a9762z",
+    "title": "/admin/members",
+    "url": "/admin/members"
+  },
+  {
+    "pageKey": "s2hil9",
     "title": "/admin/products",
     "url": "/admin/products"
   },
   {
-    "pageKey": "6pyraa",
+    "pageKey": "ceoiye",
+    "title": "/admin/reports",
+    "url": "/admin/reports"
+  },
+  {
+    "pageKey": "jg6rjb",
+    "title": "/admin/sales-analysis",
+    "url": "/admin/sales-analysis"
+  },
+  {
+    "pageKey": "hh06hy",
     "title": "/admin/vip",
     "url": "/admin/vip"
+  },
+  {
+    "pageKey": "8h51m9",
+    "title": "/buyer",
+    "url": "/buyer"
+  },
+  {
+    "pageKey": "e3tsou",
+    "title": "/contact",
+    "url": "/contact"
+  },
+  {
+    "pageKey": "tfi5qb",
+    "title": "/courses",
+    "url": "/courses"
+  },
+  {
+    "pageKey": "6v1j5d",
+    "title": "/vip-test",
+    "url": "/vip-test"
   }
 ]

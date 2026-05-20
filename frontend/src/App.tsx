@@ -7,6 +7,10 @@ import { PageTransition } from "@/components/PageTransition";
 
 // 用户端
 import Index from "./pages/Index";
+import VipTest from "./pages/VipTest";
+import Courses from "./pages/Courses";
+import Buyer from "./pages/Buyer";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 // 管理端
@@ -41,6 +45,10 @@ function App() {
           <AnimatedRoutes>
             {/* 用户端 */}
             <Route path="/" element={<PageTransition transition="slide-up"><Index /></PageTransition>} />
+            <Route path="/vip-test" element={<PageTransition transition="slide-up"><VipTest /></PageTransition>} />
+            <Route path="/courses" element={<PageTransition transition="slide-up"><Courses /></PageTransition>} />
+            <Route path="/buyer" element={<PageTransition transition="slide-up"><Buyer /></PageTransition>} />
+            <Route path="/contact" element={<PageTransition transition="slide-up"><Contact /></PageTransition>} />
 
             {/* 管理端 */}
             <Route path="/admin/login" element={<PageTransition transition="fade"><AdminLogin /></PageTransition>} />
