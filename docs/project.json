@@ -1,8 +1,8 @@
 {
   "project_type": "web",
   "sub_project_type": "",
-  "name": "色彩智选",
+  "name": "服饰智选",
   "app_slug": "choice-tob",
-  "version_description": "创建管理端登录页面",
+  "version_description": "完成管理端商品页面开发",
   "preview_type": "pc"
 }

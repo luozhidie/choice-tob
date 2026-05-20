@@ -1,47 +1,27 @@
 [
   {
-    "pageKey": "8aq7lg",
+    "pageKey": "hwqjlx",
     "title": "/",
     "url": "/"
   },
   {
-    "pageKey": "ketd0e",
-    "title": "/dashboard",
-    "url": "/dashboard"
+    "pageKey": "6d1h6o",
+    "title": "/admin/dashboard",
+    "url": "/admin/dashboard"
   },
   {
-    "pageKey": "kpxluv",
-    "title": "/inventory",
-    "url": "/inventory"
+    "pageKey": "2i9buw",
+    "title": "/admin/login",
+    "url": "/admin/login"
   },
   {
-    "pageKey": "kmp1q9",
-    "title": "/login",
-    "url": "/login"
+    "pageKey": "k1v2x0",
+    "title": "/admin/products",
+    "url": "/admin/products"
   },
   {
-    "pageKey": "hmgfoo",
-    "title": "/members",
-    "url": "/members"
-  },
-  {
-    "pageKey": "z5qjj0",
-    "title": "/products",
-    "url": "/products"
-  },
-  {
-    "pageKey": "3hf64e",
-    "title": "/reports",
-    "url": "/reports"
-  },
-  {
-    "pageKey": "8xuf82",
-    "title": "/sales-analysis",
-    "url": "/sales-analysis"
-  },
-  {
-    "pageKey": "r9033n",
-    "title": "/vip",
-    "url": "/vip"
+    "pageKey": "6pyraa",
+    "title": "/admin/vip",
+    "url": "/admin/vip"
   }
 ]

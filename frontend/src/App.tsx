@@ -12,6 +12,8 @@ import NotFound from "./pages/NotFound";
 // 管理端页面
 import AdminLogin from "./pages/admin/Login";
 import AdminDashboard from "./pages/admin/Dashboard";
+import AdminVip from "./pages/admin/Vip";
+import AdminProducts from "./pages/admin/Products";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -39,6 +41,8 @@ function App() {
             {/* 管理端路由 */}
             <Route path="/admin/login" element={<PageTransition transition="fade"><AdminLogin /></PageTransition>} />
             <Route path="/admin/dashboard" element={<PageTransition transition="slide-up"><AdminDashboard /></PageTransition>} />
+            <Route path="/admin/vip" element={<PageTransition transition="slide-up"><AdminVip /></PageTransition>} />
+            <Route path="/admin/products" element={<PageTransition transition="slide-up"><AdminProducts /></PageTransition>} />
             
             {/* 404 */}
             <Route path="*" element={<PageTransition transition="fade"><NotFound /></PageTransition>} />
@@ -49,4 +53,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
