@@ -1,0 +1,58 @@
+{
+  "permissions": {
+    "deny": [
+      "ExitPlanMode",
+      "EnterPlanMode"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.codebuddy/genie/ensure-app-ready"
+          },
+          {
+            "type": "command",
+            "command": "./.codebuddy/genie/compile-css-vars -r . > /dev/null 2>&1"
+          },
+          {
+            "type": "command",
+            "command": "./.codebuddy/genie/compile-styles -r . > /dev/null 2>&1"
+          },
+          {
+            "type": "command",
+            "command": "node \".codebuddy/skills/ppt-implement/scripts/export-ppt.js\" \".codebuddy\" \"${CODEBUDDY_PROJECT_DIR}\" > /dev/null 2>&1"
+          },
+          {
+            "type": "command",
+            "command": "./.codebuddy/genie/check-version-update"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".codebuddy/skills/ppt-implement/scripts/setup-project.js\" \".codebuddy\" \"${CODEBUDDY_PROJECT_DIR}\" \".templates\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".codebuddy/skills/ppt-implement/scripts/post-slide.js\" \".\" \"${CODEBUDDY_PROJECT_DIR}\""
+          }
+        ]
+      }
+    ]
+  }
+}

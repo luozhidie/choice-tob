@@ -1,0 +1,47 @@
+[
+  {
+    "pageKey": "imnzr8",
+    "title": "/",
+    "url": "/"
+  },
+  {
+    "pageKey": "gd9yqd",
+    "title": "/dashboard",
+    "url": "/dashboard"
+  },
+  {
+    "pageKey": "um68wk",
+    "title": "/inventory",
+    "url": "/inventory"
+  },
+  {
+    "pageKey": "olw192",
+    "title": "/login",
+    "url": "/login"
+  },
+  {
+    "pageKey": "0tgaje",
+    "title": "/members",
+    "url": "/members"
+  },
+  {
+    "pageKey": "rs250d",
+    "title": "/products",
+    "url": "/products"
+  },
+  {
+    "pageKey": "922122",
+    "title": "/reports",
+    "url": "/reports"
+  },
+  {
+    "pageKey": "41m7xt",
+    "title": "/sales-analysis",
+    "url": "/sales-analysis"
+  },
+  {
+    "pageKey": "1d12eq",
+    "title": "/vip",
+    "url": "/vip"
+  }
+]
