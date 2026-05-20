@@ -3,6 +3,6 @@
   "sub_project_type": "",
   "name": "色彩智选",
   "app_slug": "choice-tob",
-  "version_description": "初始化项目基础架构",
+  "version_description": "修复前端编译错误并更新首页",
   "preview_type": "pc"
 }
